@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+
+.header{
+    background-color: white;
+    color: black;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    top: 0;
+    box-shadow:5px 5px 10px rgb(223, 195, 195) ;
+    z-index: 1;
+}
+
+nav{
+    position: relative;
+    padding-top :20px; 
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+li{
+    float: left;
+}
+a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid rgb(168, 139, 139);
+    padding: 5px 20px;
+    transition: all ease 0.4s;
+}
+
+a:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.back{
+    width: 100%;
+    height: calc(100vh - 60px);
+    color: black;
+}
+
+.back img{
+    height: 99vh;
+    width: 100%;
+    position: relative;
+    z-index: -1;
+}
+.text-left{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    font-size: 30px;
+}
+.text-left h1{
+    padding-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aqua;
+    -webkit-text-stroke: 1px black;
+}
+.text-left p{
+    padding-left: 5px;
+    color: whitesmoke;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+.text-left button{
+    padding: 15px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    transition: all ease 0.5s;
+}
+.text-left button:hover{
+    background-color: rgba(148, 148, 249, 0.976);
+    color: #fff2ff;
+    border: 1px solid #B3C0ED;
+}
+
+#cards, #flips{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.card{
+    width: 40%;
+    height: 95vh;
+    margin: 80px 0 30px 90px;
+    position: relative;
+}
+.img{
+    width: 100%;
+    height: 85vh;
+    background-position: center;
+    background-size: cover;
+}
+.text{
+    background-color: #c6def9d8;
+    width: 100%;
+    top: 0;
+    height: 85vh;
+    padding: 40% 15% 0 15%;
+    position: absolute;
+    color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-weight: bolder;
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+.text h1{
+    padding-bottom: 20px;
+    font-weight: bolder;
+}
+.text p{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card:hover .text{
+    opacity: 1;
+    cursor: pointer;
+}
+
+hr{
+    margin: 50px 90px 0 90px;
+}
